@@ -1,0 +1,295 @@
+
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="PO CSS.css">
+    </head>
+
+    <h1><u>PEASANT ORGANISATION</u></h1>
+
+
+
+    <div class="ButtonContainer">
+        <button class="signIn" onclick="SignIn()" id="signIn">ACTIVATE</button>
+        <button class="notices" onclick="Notices()" id="notices">NOTICES</button>
+        <button class="promotion" onclick="Promotion()" id="promotion">PROMOTION/JOINING</button>
+        <button class="documents" onclick="Documents()" id="documents">ENEMIES AND ALLIANCES</button>
+        <button class="events" onclick="Events()" id="events">EVENTS</button>
+        <button class="private" onclick="Private()" id="private">PRIVATE</button>
+    </div>
+        
+    <div id="background-notices" class="background-notices">
+        <h1>
+            NOTICES
+        </h1>
+            
+        <body>
+            This will contain all the notices for the orgaisation:
+            <ul>
+                <li>NEW WEBSITE LETS GOOOOO</li>
+                <li>NEW PEASANT HISTORY BOOK: The Travellers and the Pasata Strainer 
+                (go to OneNote Document page for book)</li>
+                <li>Don't ask for the password for the private document (you will gain a strike)</li>
+                <li>The constitution and joining form have been changed to say orgaistion instead of cult</li>
+                <li>Jackson Branchu is now a member of the Peasant Orgaisation</li>
+                <li>David Michel is now a member of the Peasant Orgaisation</li>
+            </ul>
+        </body>
+    
+        <script>
+                
+            let backgroundNotices = document.getElementById("background-notices")
+            let notices = document.getElementById("notices")
+
+            function Notices(){
+                document.body.style.border = "thick solid rgb(70, 179, 0)"
+                backgroundNotices.style.display = "block"
+                backgroundPromotion.style.display = "none"
+                backgroundDocuments.style.display = "none"
+                backgroundEvents.style.display = "none"
+                backgroundPrivate.style.display = "none"
+            }
+         </script>
+    </div>
+    
+    <div id="background-promotion" class="background-promotion">
+         <h1>
+            PROMOTION/JOINING
+        </h1>
+            
+        <body>
+            In this orgaisation their are many different positions avaliable to fill. 
+            If you are dedicated to this organisation<br>Please message us to see 
+            if there is a prsition avaliable for you to fill.<br>
+            
+            <ul>
+                 Message on of the Pleasant Peasants to sign up:
+                <li>Matthew: mclar594@eq.edu.au</li>
+                <li>Oliver: othor1@eq.edu.au</li>
+                <li>Dom:</li>
+                <li>Kasper: kmuns@eq.edu.au</li>
+            </ul>
+
+        </body>
+
+            <script>
+                let backgroundPromotion = document.getElementById("background-promotion")
+                let promotion = document.getElementById("promotion")
+
+                function Promotion(){
+                    document.body.style.border = "thick solid rgb(0, 176, 114)"
+                    backgroundPromotion.style.display = "block"
+                    backgroundNotices.style.display = "none"
+                    backgroundDocuments.style.display = "none"
+                    backgroundEvents.style.display = "none"
+                    backgroundPrivate.style.display = "none"
+                }
+            </script>
+
+        </div>
+
+        <div id="background-documents" class="background-documents">
+            <h1>
+                ENEMIES AND ALLIANCES
+            </h1>
+
+            <body>
+                <table>
+                    <tr>
+                        <th>ENEMIES</th>
+                        <th>ALLIENCES</th>
+                    </tr>
+                    <tr>
+                        <th>Looser Cult</th>
+                        <th>None Yet (Stay Frosty)</th>
+                    </tr>
+                    <tr>
+                        <th>The Ben Cult</th>
+                    </tr>
+                </table>
+            </body>
+            
+
+            <script>
+            
+            let backgroundDocuments = document.getElementById("background-documents")
+            let documents = document.getElementById("documents")
+
+            function Documents(){
+                document.body.style.border = "thick solid purple"
+                backgroundDocuments.style.display = "block"
+                backgroundNotices.style.display = "none"
+                backgroundPromotion.style.display = "none"
+                backgroundEvents.style.display = "none"
+                backgroundPrivate.style.display = "none"
+            }
+            </script>
+
+        </div>
+
+        <div id="background-events" class="background-events">
+            <h1>
+                EVENTS
+            </h1>
+            <body>
+                Nothing yet but I feel like somethings coming...
+            </body>
+
+            <script>
+
+                let backgroundEvents = document.getElementById("background-events")
+                let events = document.getElementById("events")
+
+                function Events(){
+                    document.body.style.border = "thick solid rgb(0, 171, 165)"
+                    backgroundEvents.style.display = "block"
+                    backgroundNotices.style.display = "none"
+                    backgroundPromotion.style.display = "none"
+                    backgroundDocuments.style.display = "none"
+                    backgroundPrivate.style.display = "none"
+                }
+
+            </script>
+
+        </div>
+        
+        
+            
+        <div id="background-private" class="background-private">
+        
+            <h1>
+                PRIVATE
+            </h1>
+            <body>
+                Welcome to the dark side of the organisation:
+
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Number of Strikes</th>
+                        <th>Role</th>
+                    </tr>
+                    <tr>
+                        <th>Matthew Clark</th>
+                        <th>|||</th>
+                        <th>Pleasant Peasant/Documenter/Writer/Website Developer</th>
+                    </tr>
+                    <tr>
+                        <th>Oliver Thornton</th>
+                        <th>|||</th>
+                        <th>Pleasant Peasant/History Book Writer</th>
+                    </tr>
+                    <tr>
+                        <th>Domininc Perbellini</th>
+                        <th>|||</th>
+                        <th>Pleasant Peasant/The Manager of Nihil</th>
+                    </tr>
+                    <tr>
+                        <th>Halen Appleby</th>
+                        <th>|||</th>
+                        <th>Peasant</th>
+                    </tr>
+                    <tr>
+                        <th>Beau Button</th>
+                        <th>|||</th>
+                        <th>Peasant</th>
+                    </tr>
+                    <tr>
+                        <th><s>Haden Smith</s></th>
+                        <th>|||</th>
+                        <th>Non-Responsive</th>
+                    </tr>
+                    <tr>
+                        <th><s> Fergurson</s></th>
+                        <th>|||</th>
+                        <th>Combat-Logged</th>
+                    </tr>
+                    <tr>
+                        <th><s>Bower</s></th>
+                        <th>|||</th>
+                        <th>Non-Resposive</th>
+                    </tr>
+                    <tr>
+                        <th>Kaspar Munson</th>
+                        <th>|||</th>
+                        <th>Pleasant Peasant/Professional Cassowary</th>
+                    </tr>
+                    <tr>
+                        <th>Max Gilroy</th>
+                        <th>|||</th>
+                        <th>Peasant</th>
+                    </tr>
+                    <tr>
+                        <th>Jackson Branchu</th>
+                        <th>|||</th>
+                        <th>Peasant</th>
+                    </tr>
+                    <tr>
+                        <th><s>Bryn Liesse</s></th>
+                        <th>|||</th>
+                        <th>Non-Responsive</th>
+                    </tr>
+                    <tr>
+                        <th>David Michel</th>
+                        <th>|||</th>
+                        <th>Peasant</th>
+                    </tr>
+                </table>
+
+                <h2>  
+                    Secret Notices:     
+                    <ul>
+                        <li>Mattathias is making a website</li>
+                        <li>You guys have to save out documents to you devices<br>
+                            because they can go onto the website</li>
+                    </ul>
+                </h2>
+
+            </body>
+
+            <script>
+                        
+                let backgroundPrivate = document.getElementById("background-private")
+                let private = document.getElementById("private")
+
+
+                function Private(){
+                    let input = prompt('Password:')                
+                    const password = 'peasant4321@'
+
+                    if (input === password) {
+                        document.body.style.border = "thick solid rgb(171, 171, 0)"
+                        backgroundPrivate.style.display = "block"
+                        backgroundNotices.style.display = "none"
+                        backgroundPromotion.style.display = "none"
+                        backgroundDocuments.style.display = "none"
+                        backgroundEvents.style.display = "none"
+                    } else{
+                        alert('incorrect')
+                    }
+                }
+            </script>
+
+        </div>
+            
+        <script>
+            document.addEventListener('contextmenu', event => event.preventDefault());
+
+            let signIn = document.getElementById("signIn")
+            let bobRoss = document.getElementById("bobRoss")
+
+
+            function SignIn(){
+                
+                signIn.style.display = "none";
+                alert("With Great Power Comes Great Electricity Bills")
+            
+                notices.style.display = "block";
+                promotion.style.display = "block";
+                documents.style.display = "block";
+                private.style.display = "block";
+                events.style.display = "block";
+            }
+    
+        </script>
+</html>
